@@ -2,14 +2,15 @@
 
 
 :root {
-    --page-background: #d4e09b;
-    --main-background: #f6f4d2;
+    --page-background: #ffffff;
+    --main-background: #fff200;
     --main-color: #333333;
-    --accent-color: #a44a3f;
-    --link-color: #f19c79;
-    --hover-color: #cbdfbd;
+    --accent-color: #5b6471;
+    --link-color: #ec4700;
+    --hover-color: #2f4b1b;
     --normal-gap: 1em;
     --wide-gap: 2em;
+    
 }
 
 
@@ -32,7 +33,13 @@ h1,h2,h3 {
   }
 a {
     color: var(--link-color);
-}
+    text-decoration: none;
+    margin-left: 10px;
+  }
+a:hover {
+    color: #417f15;
+}    
+
 
 .content-wrapper {
     max-width: 960px; 
@@ -59,10 +66,32 @@ header.page-title h1 {
 body > nav {
     position: fixed;
     top:0;
-    background-color: rgb(200,200,200);
+    background-color: rgba(25, 255, 255, 3.8);
     left:0;
     right:0;
 }
+
 UL.main-menu li{
     display: inline-block;
+
+}
+ul.main-menu li a:hover{
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/team_girl.jpg");
+    background-color: var(--main-background);
+    /* Set a specific height */
+    height: 100pc; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.footer{
+    background-color: var(--main-background);
 }
