@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: "Dune Rise";
+    src: url(../fonts/Dune_Rise.otf);
+}
+html {
+    font-size: 120%;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+p {
+    text-align: justify;
+}
