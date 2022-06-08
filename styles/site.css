@@ -1,8 +1,9 @@
 @font-face
 {
         font-family: mojeVlastniPismo;
-        src: url(../fonts/Heebo-VariableFont_wght.ttf),
+        src: url(../fonts/Heebo-VariableFont_wght.ttf);
 }
+
 :root {
     --page-background: #ffffff;
     --main-background: #fff200;
@@ -10,9 +11,11 @@
     --accent-color: #5b6471;
     --link-color: #000000;
     --hover-color: #9a9e96ae;
-    --normal-gap: 1em;
-    --wide-gap: 2em;
+    --normal-gap: 1rem;
+    --wide-gap: 2rem;
     --nav-color: #ffffff;
+    --color-black: #000000;
+    --color-white: #ffffff;
 }
 html {
 
@@ -68,11 +71,11 @@ header.page-title {
     align-items: center;
 }
 section h2{
-    color: black;
+    color: var(--color-black);
     font-size: 3rem;
 }
 header.page-title h1 {
-    color: rgb(255, 255, 255);
+    color: var(--color-white);
     border: none;
     font-size: 12rem;
     font-family: 'Poppins', sans-serif;
@@ -106,7 +109,7 @@ UL.main-menu li{
     display: inline-block;
 }
 ul.main-menu li a {
-    padding: 1em;
+    padding: 1rem;
     display: block;
     text-decoration: none;
         
@@ -115,7 +118,7 @@ ul.main-menu li a {
 
 ul.main-menu li a:hover{
     background-color: var(--hover-color);
-    color: black;
+    color: var(--color-black);
 }
 
 
