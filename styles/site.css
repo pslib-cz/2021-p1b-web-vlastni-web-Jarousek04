@@ -170,5 +170,79 @@ footer p a{
     user-select: none;
     -webkit-touch-callout: none;
   }
+  .space-gallery {
+    margin-top: 10%;
+    padding: 2.5%;
+    height: 25%;
+    margin-left: 0;
+    margin-right: 0;
+    color: var(--text-p);
+    background-color: var(--navbar);
+  }
 
-
+  .galerie{
+    display: flex;
+    flex-direction: row;
+ }
+ div.gallery-box{
+    width: 50%;
+    }
+    div.gallery p {
+        font-size: 1.5rem;
+        margin-bottom: 0%;
+        color: var(--text-nav);
+        font-family: popins;
+        text-align: center;
+    }
+    
+    div.gallery {
+        margin: 1.8%;
+        float: left;
+        width: 100%;
+    }
+    div.gallery-box {
+        height: 70%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: row;
+    }
+    
+    @media( max-width: 800px) {
+        div.gallery-box{
+            flex-wrap: none;
+            width: 45%;
+            margin: auto;
+            display: block;
+        }
+        .space-gallery{
+            height: 80%;
+        }
+        div.gallery p{
+            font-size: 1rem;
+        }
+    }
+      
+    .gallery img {
+        flex-basis: 25%;
+        width: 100%;
+    }
+      
+    .gallery p {
+        font-size: 80%;
+    }
+    
+    .gallery-image{
+        border: 0.2rem solid var(--text-h1);
+        transition: all 0.2s ease;
+        border-radius: 0.5rem;
+    }
+    
+    .gallery-image:hover{
+        border-radius: 0.5rem;
+        justify-content: center;
+        border: 0.2rem solid var(--text-h1);
+        box-shadow: 0px 0px 30px var(--text-h1);
+        margin: 2.5%;
+        width: 95%;
+    }   
